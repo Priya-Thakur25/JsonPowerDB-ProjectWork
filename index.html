@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student Enrollment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1><b>Student Enrollment Form</b></h1>
+        <form id="StuForm" method="get">
+            <div class="form-group">
+                <span><label for="StuId">Roll No:</label> <label id="StuIdMsg"></label></span>
+                <input type="text" class="form-control" name="StuId" id="StuId" placeholder="Enter Student Roll No" onchange="getStu()">
+            </div>
+            <div class="form-group">
+                <label for="StuName">Full-Name:</label>
+                <input type="text" class="form-control" id="StuName" placeholder="Enter Student Name" name="StuName">
+            </div>
+            <div class="form-group">
+                <label for="StuClass">Class:</label>
+                <input type="text" class="form-control" id="StuClass" placeholder="Enter Student Class" name="StuClass">
+            </div>
+            <div class="form-group">
+                <label for="StuBirthDate">Birth-Date:</label>
+                <input type="date" class="form-control" id="StuBirthDate" name="StuBirthDate">
+            </div>
+            <div class="form-group">
+                <label for="StuAddress">Address:</label>
+                <input type="text" class="form-control" id="StuAddress" placeholder="Enter Student Address" name="StuAddress">
+            </div>
+            <div class="form-group">
+                <label for="StuEnrollment">Enrollment-Date:</label>
+                <input type="date" class="form-control" id="StuEnrollment" name="StuEnrollment">
+            </div>
+            <input type="button" class="btn btn-primary" id="StuSave" value="save" onclick="saveStudent();" disabled>
+            <input type="button" class="btn btn-success" id="StuUpdate" value="update" onclick="updateStudent();" disabled>
+            <input type="button" class="btn btn-warning" id="StuReset" value="reset" onclick="resetForm();" disabled>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
